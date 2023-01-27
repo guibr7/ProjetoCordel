@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+:root{
+    --fontebody: Arial, Helvetica, sans-serif;
+    --fontetitulo:'Lilita One', cursive;
+    --fontecordel: 'Kalam', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    background-color:darkgrey;
+    min-height: 100vh;
+    font-family: var(--fontebody);
+}
+
+header{
+    background-color: black;
+    color:white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    /*text-transform: uppercase;*/
+    font-variant: small-caps;
+    font-family: var(--fontetitulo);
+    font-size: 9vw;
+}
+
+header>p{
+    padding-bottom: 50px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fontecordel);
+    font-size: 3.5vw;
+}
+
+section>p{
+    padding-bottom: 2em;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(37, 37, 37);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgb(0,0,0,0.473);
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.514);
+    background-size: cover;;
+}
+
+section#img0{
+    background-image:url(imagens/background001.jpg);
+    background-position: right center;
+}
+
+section#img1{
+    background-image:url(imagens/background002.jpg);
+    background-position: right center;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
